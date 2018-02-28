@@ -1,0 +1,250 @@
+/*==========  Desktop First Method  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+	.production .production-second .palka-blue {
+		left: 314px;
+	}
+	.reasons6 .reasons6-body h2 {
+		margin-left: 80px;
+	}
+}	
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+	header .menu li a {
+		font-size: 15px;
+	}
+	header .telefoni {
+		font-size: 14px;
+	}
+	header .telefoni span {
+		font-size: 16px;
+	}
+	.production .production-second .palka-blue {
+		left: 202px;
+	}
+	.key-employee .img-container {
+		height: 200px;
+		width: 200px;
+	}
+	.key-employee .img-container img {
+		max-width: 150%;
+		min-height: 100%;
+	}
+	.job-body .content {
+		padding: 20px 10px;
+		background-color: rgba(255, 255, 255, 0.7);
+	}
+	.job-vacancy .job-vacancy-head h2 {
+		font-size: 30px;
+	}
+	.job-vacancy .buttons button {
+		font-size: 18px;
+		
+	}
+	.job-vacancy .job-vacancy-head .buttons button {
+		font-size: 18px;
+	}
+	.job-vacancy .job-vacancy-body h2 {
+		background-color: rgba(255, 255, 255, 0.7);
+		margin-bottom: 0px;
+		padding-bottom: 30px;
+		text-align: center;
+		line-height: 32px;
+	}
+	.job-vacancy .job-vacancy-body .palka {
+		display: none;
+	}
+	.job-vacancy .job-vacancy-body p {
+		background-color: rgba(255, 255, 255, 0.7);
+	}
+	.job-vacancy .job-vacancy-head .arrow {
+		top: 280px;
+	}
+	footer .menu li a {
+		font-size: 14px;
+	}
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+	.home .Zagolovok h1 {
+		background-color: rgba(0, 0, 0, 0.5);
+	}
+	.home .Zagolovok h2 {
+		font-size: 80px;
+	}
+	header .flex-container {
+		flex-flow: row wrap;
+		align-content: space-between;
+	}
+	header .logo {
+		width: 50%;
+	}
+	header .telefoni {
+		width: 50%;
+	}
+	header .menu {
+		order: 1;
+		width: 100%;
+	}
+	header .flex-container {
+		height: 140px;
+	}
+	header {
+		padding-bottom: 20px;
+	}
+	.production .img-container img {
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.production .palka-blue {
+		width: 100%;
+	}
+	.production .production-second .palka-blue {
+		left: 0px;
+	}
+	.production h2 {
+		text-align: center;
+		font-size: 24px;
+	}
+	.production p {
+		text-align: center;
+	}
+	.production .production-second h2 {
+		text-align: center;
+
+	}
+	.production .production-second p {
+		text-align: center;
+	}
+	.job-body .content {
+		padding: 20px 10px;
+		background-color: rgba(255, 255, 255, 0.7);
+	}
+	.job-body .content .item:first-child {
+		margin-top: 0px;
+	}
+	.job .job-head:after {
+		margin-left: -68px;
+	}
+	.job .job-head .arrow {
+		margin-left: -42px;
+		top: 125px;
+	}
+	.job .job-head h2 {
+		font-size: 28px;
+	}
+	.employee .employee-body:after {
+		display: none;
+	}
+	.employee .employee-body .arrow {
+		display: none;
+	}
+	.key-employee .img-container {
+		width: 240px;
+		height: 240px;
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.key-employee .img-container img {
+		max-width: 150%;
+		min-height: 100%;
+	}
+	.key-employee .new-row {
+		margin-top: 0px;
+	}
+	.key-employee h2 {
+		margin-bottom: 25px;
+	}
+	.job-vacancy .buttons button {
+		margin-top: 15px;
+		font-size: 15px;
+	}
+	.job-vacancy .job-vacancy-head h2 {
+		font-size: 40px;
+	}
+	.job-vacancy .job-vacancy-head .arrow {
+		top: 404px;
+	}
+	.interview .interview-head h2 {
+		font-size: 30px;
+	}
+	footer .telefoni {
+		font-size: 14px;
+	}
+	footer .telefoni span {
+		font-size: 16px;
+	}
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+	header .telefoni p {
+		font-size: 10px;
+	}
+	header .telefoni span {
+		font-size: 10px;
+	}
+	header .telefoni img {
+		margin-right: 3px;
+	}
+	header .menu li a {
+		font-size: 12px;
+	}
+	.job .job-head .arrow {
+		top: 155px;
+	}
+	.job .job-head h2 {
+		font-size: 30px;
+	}
+	.key-employee .img-container {
+		height: 200px;
+		width: 200px;
+	}
+	.key-employee .img-container img {
+		max-width: 150%;
+	}
+	.reasons6 .reasons6-body h2 {
+		margin-left: 50px;
+	}
+	.reasons6 .reasons6-body img {
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.job-vacancy .job-vacancy-head .buttons button {
+		font-size: 15px;
+	}
+	.job-vacancy .job-vacancy-head h2 {
+		font-size: 25px;
+	}
+	.job-vacancy .job-vacancy-head .arrow {
+		top: 376px;
+	}
+	.interview .interview-head h2 {
+		font-size: 35px;
+	}
+	.interview .interview-head .arrow {
+		top: 166px;
+	}
+	#top {
+		display: none !important;
+	}
+	footer .telefoni {
+		font-size: 10px;
+	}
+	footer .telefoni span {
+		font-size: 10px;
+	}
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px) {
+	
+}

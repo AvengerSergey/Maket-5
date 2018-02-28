@@ -1,0 +1,783 @@
+*::-webkit-input-placeholder {
+	color: #666;
+	opacity: 1;
+}
+*:-moz-placeholder {
+	color: #666;
+	opacity: 1;
+}
+*::-moz-placeholder {
+	color: #666;
+	opacity: 1;
+}
+*:-ms-input-placeholder {
+	color: #666;
+	opacity: 1;
+}
+
+input::-webkit-input-placeholder       {opacity: 1; transition: opacity 0.3s ease;}
+input::-moz-placeholder                {opacity: 1; transition: opacity 0.3s ease;}
+input:-moz-placeholder                 {opacity: 1; transition: opacity 0.3s ease;}
+input:-ms-input-placeholder            {opacity: 1; transition: opacity 0.3s ease;}
+input:focus::-webkit-input-placeholder {opacity: 0; transition: opacity 0.3s ease;}
+input:focus::-moz-placeholder          {opacity: 0; transition: opacity 0.3s ease;}
+input:focus:-moz-placeholder           {opacity: 0; transition: opacity 0.3s ease;}
+input:focus:-ms-input-placeholder      {opacity: 0; transition: opacity 0.3s ease;}
+textarea::-webkit-input-placeholder       {opacity: 1; transition: opacity 0.3s ease;}
+textarea::-moz-placeholder                {opacity: 1; transition: opacity 0.3s ease;}
+textarea:-moz-placeholder                 {opacity: 1; transition: opacity 0.3s ease;}
+textarea:-ms-input-placeholder            {opacity: 1; transition: opacity 0.3s ease;}
+textarea:focus::-webkit-input-placeholder {opacity: 0; transition: opacity 0.3s ease;}
+textarea:focus::-moz-placeholder          {opacity: 0; transition: opacity 0.3s ease;}
+textarea:focus:-moz-placeholder           {opacity: 0; transition: opacity 0.3s ease;}
+textarea:focus:-ms-input-placeholder      {opacity: 0; transition: opacity 0.3s ease;}
+
+body input:focus:required:invalid, body textarea:focus:required:invalid {}
+body input:required:valid, body textarea:required:valid{}
+
+body{font-family: "RobotoRegular", sans-serif; font-size: 16px; line-height: 1; overflow-x: hidden;}
+
+a{
+	-webkit-transition: all ease-in .2s;
+	-o-transition: all ease-in .2s;
+	transition: all ease-in .001s;
+}
+
+.text-left{text-align: left;}
+.text-center{text-align: center;}
+.text-right{text-align: right;}
+
+.input-wrap{position: relative;}
+
+.null{padding-left: 0; padding-right: 0;}
+.null-left{padding-left: 0;}
+.null-right{padding-right: 0;}
+
+.flex-center{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.img-responsive{
+	display: inline-block;
+	max-width: 100%;
+	height: auto;
+}
+
+#success{display: none;}
+#success h4{
+	font-size: 20px;
+	text-align: center;
+	padding: 10px 15px;
+}
+.flex-container {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+}
+header {
+	background-color: rgba(255, 255, 255, 0.8);
+	box-shadow: 0px 3px 20px 0px #000;
+}
+header .flex-container {
+	height: 100px;
+	justify-content: space-between;
+	align-items: center;
+}
+header .logo {
+	width: 15%;
+
+}
+header .menu {
+	width: 55%;
+}
+header .menu li {
+	width: 33.33%;
+	float: left;
+}
+header .menu li a {
+	display: block;
+	width: 90%;
+	height: 40px;
+	margin-right: 20px;
+	border-radius: 5px;
+	background-color: #e56727;
+	text-align: center;
+	font-family: "UbuntuBold";
+	font-size: 18px;
+	line-height: 40px;
+	color: #fff;
+	text-transform: uppercase;
+}
+header .menu li a:hover{
+	box-shadow: 0px 3px 0px 0px  #9d2601;
+}
+header .menu li a:active{
+	padding-top: 2px;
+	background-color: #9d2601;
+}
+header .telefoni {
+	width: 30%;
+	font-family: "UbuntuRegular";
+	font-size: 18px;
+	color: #000;
+}
+header .telefoni span {
+	font-family: "UbuntuBold";
+	font-size: 24px;
+}
+header .telefoni img {
+	float: left;
+	margin-right: 15px;
+}
+.home {
+	background-image: url(../images/home.png);
+	background-size: cover;
+	padding-bottom: 200px;
+	border-bottom: 3px solid #fff;
+	box-shadow: 0px -3px 40px 0px #000;
+	position: relative;
+}
+/*
+.home:after{
+	content: "";
+	display: block;
+	width: 150px;
+	height: 50px;
+	background-image: url(../images/after-home.png);
+	background-repeat: no-repeat;
+	background-position: center center;
+	position: absolute;
+	left: 50%;
+	bottom: -150px;
+	z-index: 100;
+}
+*/
+.home .Zagolovok {
+	text-align: center;
+	margin-top: 180px;
+}
+.home .Zagolovok h1 {
+	font-family: "UbuntuBold";
+	font-size: 36px;
+	color: #fff;
+	margin-top: 130px;
+}
+.home .Zagolovok h2 {
+	font-family: "UbuntuBold";
+	font-size: 110px;
+	color: #10b4da;
+}
+.production h2 {
+	font-family: "UbuntuBold";
+	font-size: 36px;
+	color: #000;
+	margin-top: 80px;
+	
+}
+.production p {
+	font-family: "UbuntuRegular";
+	font-size: 18px;
+	color: #000;
+	margin-top: 57px;
+	line-height: 24px;
+}
+.production .palka-blue {
+	height: 1px;
+	width: 140px;
+	background: url(../images/palka-blue.png);
+	background-repeat: repeat-x;
+	position: relative;
+	top: 30px;
+	left: 0px;
+}
+.production .production-first {
+	background: url(../images/production-1-bg.png);
+	background-position: 100% 0%;
+	background-repeat: no-repeat;
+	background-size: cover;
+	
+}
+.production .production-second {
+	background: url(../images/production-2-bg.png);
+	background-position: 100% 0%;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.production .production-second h2 {
+	text-align: right;
+}
+.production .production-second p {
+	text-align: right;
+}
+.production .production-second .palka-blue {
+	left: 413px;
+}
+.production .production-third {
+	background: url(../images/production-3-bg.png);
+	background-position: 100% 0%;
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding-bottom: 40px;
+}
+.production {
+	border-bottom: 6px solid #00aeef;
+}
+.production .img-container {
+	width: 100%;
+}
+.production .img-container img {
+	max-width: 100%;
+	height: auto;
+}
+.job .job-head {
+	padding: 50px 0px;
+	box-shadow: 0px 5px 21px 0px rgba(0, 0, 0, 0.4);
+	position: relative;
+}
+.job .job-head:after {
+	content: "";
+	width: 140px;
+	height: 47px;
+	background: url(../images/jobs-after.png);
+	position: absolute;
+	left: 50%;
+	bottom: -46px;
+	margin-left: -72px;
+}
+.job .job-head .arrow {
+	width: 88px;
+	height: 25px;
+	background: url(../images/arrow.png);
+	position: absolute;
+	left: 50%;
+	margin-left: -46px;
+	top: 137px;
+	z-index: 20;
+	animation-name: strelka-down;
+	animation-duration: 3s;
+	animation-iteration-count: infinite;
+}
+.job .job-head h2 {
+	text-transform: uppercase;
+	font-family: "UbuntuBold";
+	font-size: 40px;
+	color: #00aeef;
+	text-align: center;
+}
+.job .job-body {
+	padding-top: 85px;
+	padding-bottom: 45px;
+	background-image: url(../images/job-bg.png);
+	background-repeat: no-repeat;
+	background-position: -263px 0px;
+	background-size: cover;
+}
+.job .job-body .item {
+	margin-top: 30px;
+}
+.job .job-body .img-container {
+	width: 100%;
+}
+.job .job-body .img-container img {
+	max-width: 100%;
+	height: auto;
+}
+.job .job-body .item p {
+	font-family: "UbuntuRegular";
+	color: #000;
+	font-size: 18px;
+	line-height: 24px;
+}
+.employee {
+	
+}
+.employee .employee-head {
+	background-color: #dfb100;
+}
+.employee .employee-head h2 {
+	font-family: "UbuntuBold";
+	font-size: 40px;
+	color: #000;
+	padding: 40px 0px;
+	text-align: center;
+	text-transform: uppercase;
+}
+.employee .employee-body {
+	padding-top: 35px;
+	padding-bottom: 55px;
+	background: url(../images/employee-bg.png);
+	background-repeat: no-repeat;
+	background-position: -255px 0px;
+	background-size: cover;
+	box-shadow: 0px 5px 21px 0px rgba(0, 0, 0, 0.5);
+	position: relative;
+	z-index: 15;
+}
+.employee .employee-body:after{
+	content: "";
+	width: 140px;
+	height: 47px;
+	background: url(../images/key-employee-after.png);
+	position: absolute;
+	left: 50%;
+	bottom: -46px;
+	margin-left: -72px;
+}
+.employee .employee-body .arrow {
+	width: 88px;
+	height: 25px;
+	background: url(../images/arrow.png);
+	position: absolute;
+	left: 50%;
+	margin-left: -46px;
+	top: 565px;
+	z-index: 20;
+	animation-name: strelka-down;
+	animation-duration: 3s;
+	animation-iteration-count: infinite;
+}
+.employee .employee-body h3 {
+	font-family: "UbuntuRegular";
+	font-size: 24px;
+	color: #000;
+	text-align: center;
+}
+.employee .employee-body h3 span {
+	font-family: "UbuntuBold";
+	font-size: 36px;
+	color: #000;
+}
+.employee .employee-body .img-container {
+	width: 100%;
+}
+.employee .employee-body img {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 100%;
+	max-height: auto;
+}
+.employee .employee-body p {
+	font-family: "UbuntuBold";
+	font-size: 36px;
+	color: #000;
+	text-align: center;
+	margin-top: 50px;
+}
+.key-employee {
+	background: url(../images/key-employee-bg.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding-top: 85px;
+	position: relative;
+	z-index: 5;
+	padding-bottom: 50px;
+}
+.key-employee .img-container {
+	width: 100%;
+	height: 300px;
+	overflow: hidden;
+	border: 3px solid #fff;
+	box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.5);
+}
+.key-employee .img-container img {
+	min-width: 100%;
+	height: auto;
+}
+.key-employee h2 {
+	font-family: "UbuntuBold"
+	color: #000;
+	font-size: 18px;
+	font-weight: bold;
+	text-align: center;
+	margin-top: 25px;
+	line-height: 24px;
+}
+.key-employee h2 span {
+	text-transform: uppercase;
+	color: #148ea3;
+}
+.key-employee .new-row {
+	margin-top: 65px;
+}
+.reasons6 .reasons6-header {
+	padding: 45px 0px;
+	background-color: #45bacd;
+	box-shadow: 0px 5px 21px 0px rgba(0, 0, 0, 0.5);
+	position: relative;
+	z-index: 10;
+}
+.reasons6 .reasons6-header h2 {
+	font-family: "UbuntuBold";
+	font-size: 40px;
+	color: #000;
+	text-align: center;
+}
+.reasons6 .reasons6-body {
+	padding-top: 70px;
+	background-image: url(../images/reasons6-bg.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: -600px 0px;
+	position: relative;
+	z-index: 5;
+}
+.reasons6 .reasons6-body figure {
+	margin-bottom: 40px;
+}
+.reasons6 .reasons6-body .img-container {
+	width: 20%;
+	float: left;
+}
+.reasons6 .reasons6-body img {
+	max-width: 100%;
+}
+.reasons6 .reasons6-body h2 {
+	display: block;
+	width: 80%;
+	margin-left: 20px;
+	font-family: "UbuntuBold";
+	font-size: 24px;
+	color: #000;
+}
+.reasons6 .reasons6-body p {
+	display: block;
+	width: 100%;
+	margin-top: 40px;
+	font-family: "UbuntuRegular";
+	color: #000;
+	font-size: 14px;
+	line-height: 18px;
+}
+.job-vacancy .job-vacancy-head {
+	padding-top: 80px;
+	padding-bottom: 65px;
+	background-color: #efc200;
+	box-shadow: 0px 5px 21px 0px rgba(0, 0, 0, 0.5);
+	position: relative;
+	z-index: 20;
+}
+.job-vacancy .job-vacancy-head h2 {
+	font-family: "UbuntuBold";
+	font-size: 40px;
+	color: #000;
+	text-align: center;
+}
+.job-vacancy .job-vacancy-head .buttons {
+	margin-top: 60px;
+}
+.job-vacancy .job-vacancy-head .buttons button {
+	width: 100%;
+	height: 45px;
+	background-color: #cf5828;
+	font-family: "UbuntuBold";
+	font-size: 24px;
+	color: #fff;
+	outline: none;
+	border: none;
+	border-radius: 5px;
+}
+.job-vacancy .job-vacancy-head .buttons button:hover {
+	box-shadow: 0px 3px 0px 0px #9d2601;
+}
+.job-vacancy .job-vacancy-head .buttons button:active {
+	background-color: #9d2601;
+	padding-top: 7px;
+}
+.job-vacancy .job-vacancy-head:after{
+	content: "";
+	width: 140px;
+	height: 47px;
+	background: url(../images/job-vacancy-after.png);
+	position: absolute;
+	left: 50%;
+	bottom: -46px;
+	margin-left: -72px;
+}
+.job-vacancy .job-vacancy-head .arrow {
+	width: 88px;
+	height: 25px;
+	background: url(../images/arrow.png);
+	position: absolute;
+	left: 50%;
+	margin-left: -46px;
+	top: 287px;
+	z-index: 20;
+	animation-name: strelka-down;
+	animation-duration: 3s;
+	animation-iteration-count: infinite;
+}
+.job-vacancy .job-vacancy-body {
+	box-shadow: 0px 5px 21px 0px rgba(0, 0, 0, 0.5);
+}
+.job-vacancy .job-vacancy-body #vacancy-first,#vacancy-second,#vacancy-third,#vacancy-fourth {
+	padding-top: 140px;
+	padding-bottom: 170px;
+}
+.job-vacancy .job-vacancy-body h2 {
+	font-family: "UbuntuBold";
+	font-size: 24px;
+	color: #000;
+	margin-bottom: 30px;
+}
+.job-vacancy .job-vacancy-body .palka {
+	width: 33.33%;
+	height: 1px;
+	background-color: #000;
+	margin-bottom: 25px;
+}
+.job-vacancy .job-vacancy-body p {
+	font-family: "UbuntuRegular";
+	font-size: 18px;
+	color: #000;
+	line-height: 24px;
+}
+.job-vacancy .job-vacancy-body p span {
+	color: #199bb5;
+}
+.job-vacancy .job-vacancy-body #vacancy-first {
+	background-image: url(../images/job-vacancy-bg-first.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: -491px 0px;
+	position: relative;
+	z-index: 10;
+}
+.job-vacancy .job-vacancy-body #vacancy-second {
+	background-image: url(../images/job-vacancy-bg-second.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: -491px 0px;
+	position: relative;
+	z-index: 10;
+}
+.job-vacancy .job-vacancy-body #vacancy-third {
+	background-image: url(../images/job-vacancy-bg-third.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: -491px 0px;
+	position: relative;
+	z-index: 10;
+}
+.job-vacancy .job-vacancy-body #vacancy-fourth {
+	background-image: url(../images/job-vacancy-bg-fourth.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: -491px 0px;
+	position: relative;
+	z-index: 10;
+}
+
+.interview .interview-head {
+	padding: 55px 0px;
+	border-bottom: 4px solid #34d0e6;
+	position: relative;
+}
+.interview .interview-head h2 {
+	font-family: "UbuntuBold";
+	font-size: 40px;
+	color: #000;
+	text-align: center;
+}
+.interview .interview-head:after {
+	content: "";
+	width: 140px;
+	height: 47px;
+	background: url(../images/interview-after.png);
+	position: absolute;
+	left: 50%;
+	bottom: -46px;
+	margin-left: -72px;
+}
+.interview .interview-head .arrow {
+	width: 88px;
+	height: 25px;
+	background: url(../images/arrow.png);
+	position: absolute;
+	left: 50%;
+	margin-left: -46px;
+	top: 137px;
+	z-index: 20;
+	animation-name: strelka-down;
+	animation-duration: 3s;
+	animation-iteration-count: infinite;
+}
+.interview .interview-body {
+	padding-top: 65px;
+	padding-bottom: 42px;
+	background-image: url(../images/interwiew-bg.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: 0px 0px;
+}
+.interview .interview-body h2 {
+	font-family: "UbuntuBold";
+	font-size: 26px;
+	color: #000;
+	text-align: center;
+	line-height: 36px;
+	margin-bottom: 33px;
+}
+.interview .interview-body h2 span {
+	color: #209dd8;
+}
+.interview .interview-body .inner {
+	padding-top: 35px;
+	padding-bottom: 20px;
+	border: 2px solid #34d0e6;
+	background-color: #fff;
+	
+}
+.interview .interview-body .inner .img-container {
+	width: 100%;
+	height: 430px;
+	overflow: hidden;
+	border: 2px solid #fff;
+	box-shadow: 3px 5px 5px 0px rgba(0, 0, 0, 0.6);
+}
+.interview .interview-body .inner .img-container img {
+	
+}
+.interview .interview-body .inner input[type="text"]{
+	width: 100%;
+	height: 50px;
+	border: 1px solid #219cd7;
+	padding-left: 10px;
+	font-family: "UbuntuRegular";
+	font-size: 15px;
+}
+.interview .interview-body .inner p {
+	font-family: "UbuntuBold";
+	font-style: italic;
+	font-size: 18px;
+	color: #000;
+	margin-bottom: 10px;
+	margin-top: 35px;
+}
+.interview .interview-body .inner p.name{
+	margin-top: 0px;
+}
+.interview .interview-body .inner input[type="submit"]{
+	width: 100%;
+	height: 45px;
+	background: linear-gradient(to bottom, #c6380a, #ec6c26);
+	border-radius: 7px;
+	border: none;
+	outline: none;
+	margin-top: 40px;
+	font-family: "UbuntuBold";
+	font-size: 24px;
+	color: #fff;
+}
+.interview .interview-body .inner input[type="submit"]:hover {
+	box-shadow: 0px 3px 0px 0px #9d2601;
+}
+.interview .interview-body .inner input[type="submit"]:active {
+	background: #9d2601;
+	padding-top: 5px;
+}
+.interview .interview-body .inner input[type="file"]{
+	width: 100%;
+	height: 50px;
+	border: 1px solid #219cd7;
+	font-family: "UbuntuRegular";
+	font-size: 15px;
+	padding-top: 12px;
+}
+.interview .interview-body .inner label.error{
+	font-family: "UbuntuBold";
+	font-size: 15px;
+	color: red;
+	top: 0px;
+	left: 0px;
+	padding-top: 0px;
+	position: relative;
+}
+
+.map .map-head {
+	padding: 40px 0px;
+	background-color: #3fafc1;
+	box-shadow: 0px 5px 21px 0px rgba(0, 0, 0, 0.5);
+	position: relative;
+	z-index: 20;
+}
+.map .map-head h2 {
+	font-family: "UbuntuBold";
+	font-size: 40px;
+	color: #000;
+	text-align: center;
+}
+footer {
+	padding-top: 7px;
+}
+footer .logo {
+	
+}
+footer .menu {
+	width: 100%;
+	margin-top: 20px;
+}
+footer .menu li {
+	width: 33.33%;
+	float: left;
+}
+footer .menu li a {
+	display: block;
+	width: 90%;
+	height: 40px;
+	margin-right: 20px;
+	border-radius: 5px;
+	background-color: #e56727;
+	text-align: center;
+	font-family: "UbuntuBold";
+	font-size: 18px;
+	line-height: 40px;
+	color: #fff;
+	text-transform: uppercase;
+}
+footer .menu li a:hover{
+	box-shadow: 0px 3px 0px 0px  #9d2601;
+}
+footer .menu li a:active{
+	padding-top: 2px;
+	background-color: #9d2601;
+}
+footer .telefoni {
+	font-family: "UbuntuRegular";
+	font-size: 18px;
+	color: #000;
+	margin-top: 20px;
+}
+footer .telefoni span {
+	font-family: "UbuntuBold";
+	font-size: 24px;
+}
+footer .telefoni img {
+	float: left;
+	margin-right: 15px;
+}
+#top {
+	cursor: pointer;
+	display: none;
+	width: 50px;
+	height: 50px;
+	background: #efc200;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 40px;
+	font-size: 36px;
+	color: #000;
+	position: fixed;
+	bottom: 30px;
+	right: 30px;
+	z-index: 100;
+}
+@keyframes strelka-down {
+	from {transform: translate(0px, 0px);}
+	50% {transform: translate(0px, 20px);}
+	100% {transform: translate(0px, 0px);}
+}
